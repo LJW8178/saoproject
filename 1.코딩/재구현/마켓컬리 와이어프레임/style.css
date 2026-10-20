@@ -66,6 +66,8 @@ body {
 ul, li {
     margin: 0;
     padding: 0;
+    gap: 20px;
+    list-style: none;
     
 }
 
@@ -80,4 +82,19 @@ ul, li {
 }
 .header-utils {
     border: 1px solid red;
+}
+.con {
+    border: 1px solid orange;
+    height: 1050px; height: 35px;
+    color: #333333;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+.con>nav>ul {
+    display: flex;
+    justify-content: end;
 }
