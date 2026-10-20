@@ -91,9 +91,6 @@ ul, li{
     font-size: 14px;
 }
 
-.utility-menu{
-    /* border: 선 */
-}
 .utility-con {
     height: 35px;
     justify-content: flex-end;
