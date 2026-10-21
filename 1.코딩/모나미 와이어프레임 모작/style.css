@@ -1,7 +1,61 @@
 body {
-    
+    font-family: sans-serif;
+}
+ul, li {
+    list-style: none;
 }
 .head-top {
     border: 1px solid red;
     height: 59px;
+    display: flex;
+    justify-content: center;
+}
+.conwrap {
+    border: 1px solid orange;
+    width: 1269px; height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.head-icon {
+    display: flex;
+    align-items: end;
+}
+.language-box {
+    width: 88px; height: 30px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    gap: 7px;
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+}
+.language-box> .flag {
+    width: 13px; height: 11px;
+    object-fit: cover;
+    padding-left: 10px;
+}
+.languge-box> .arrow {
+    width: 7px;
+}
+.language-text {
+    font-size: 11px;
+    color: #000;
+}
+.social {
+    height: 30px;
+    margin-left: 12px;
+
+}
+.social>img {
+    margin-right: 7px;
+}
+.top-menu {
+    display: flex;
+    align-items: end;
+}
+.top-menu>nav>ul {
+    font-size: 11px;
+    color: #9b9a9a;
+    gap: 22px;
+    display: flex;
 }
