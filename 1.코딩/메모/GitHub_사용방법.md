@@ -102,28 +102,6 @@ flowchart LR
     C -->|"Push"| D["GitHub 원격 저장소"]
 ```
 
-### 3-5. 오늘 배운 내용 전체 흐름
-
-```mermaid
-flowchart TD
-    A["GitHub Repository 생성"]
-    B["Visual Studio에서 .md 파일 작성"]
-    C["Commit: 변경 내용 기록"]
-    D["Push: GitHub에 업로드"]
-    E["원격 저장소에 파일 보관"]
-    F["다른 컴퓨터에서 로그인 후 접근"]
-
-    A --> B --> C --> D --> E --> F
-```
-
-**핵심 정리**
-
-- **Local:** 내 컴퓨터에 있는 저장소
-- **Remote:** GitHub에 있는 저장소
-- **Repository:** 파일을 관리하는 저장소
-- **Commit:** 변경 내용을 기록
-- **Push:** Commit한 내용을 GitHub에 업로드
-
 GitHub를 활용하면 파일을 이메일로 따로 옮기지 않아도 다른 컴퓨터에서 접근할 수 있다.
 
 # 10-19 UI/UX · Frontend 학습 기록
@@ -186,6 +164,8 @@ GitHub를 활용하면 파일을 이메일로 따로 옮기지 않아도 다른 
 </div>
 ```
 
+- 클래스명은 요소의 역할을 알아볼 수 있도록 지정한다.
+
 ### 개념 5. CSS 주요 속성
 
 | 속성 | 역할 |
@@ -234,25 +214,7 @@ flowchart TD
     D --> E
 ```
 
-### 3-2. HTML 구조
-
-```mermaid
-flowchart TD
-    A["div.container"]
-    B["nav"]
-    C["ul"]
-    D["li: Home"]
-    E["li: About"]
-    F["li: Contact"]
-
-    A --> B
-    B --> C
-    C --> D
-    C --> E
-    C --> F
-```
-
-### 3-3. CSS 여백과 테두리 관계
+### 3-2. CSS 여백과 테두리 관계
 
 ```text
 ┌──────────── margin ────────────┐
@@ -269,45 +231,6 @@ margin : 요소 바깥쪽 여백
 border : 요소의 테두리
 gap    : 요소들 사이의 간격
 ```
-
-### 3-4. 오늘의 학습 내용 전체 구조
-
-```mermaid
-flowchart TD
-    A["오늘의 학습"]
-    A --> B["개발 도구"]
-    A --> C["HTML"]
-    A --> D["CSS"]
-
-    B --> E["Codex"]
-    E --> F["MCP 설치"]
-    F --> G["Playwright 브라우저 조작"]
-
-    C --> H["nav / ul / li"]
-    C --> I["container / class"]
-
-    D --> J["border"]
-    D --> K["margin"]
-    D --> L["gap"]
-    D --> M["높이 최소화"]
-```
-
----
-
-## 4. 핵심 요약
-
-- **Codex:** AI 코딩 도구
-- **MCP:** AI와 외부 도구를 연결하는 프로토콜
-- **Playwright MCP:** 브라우저 조작을 지원하는 도구
-- **`nav`:** 내비게이션 영역
-- **`ul` / `li`:** 목록(제목)과 목록 항목
-- **`container`:** 콘텐츠를 감싸는 영역에 사용하는 클래스명
-- **`border`:** 선
-- **`margin`:** 바깥쪽 여백
-- **`gap`:** 요소 사이 간격
-- **클래스명:** 요소의 역할을 알아볼 수 있도록 지정
-- **레이아웃:** 불필요한 높이와 여백을 줄여 공간 활용
-
 
 # 10-20 UI/UX · Frontend 학습 기록
 
@@ -504,24 +427,6 @@ border-box
 실제 전체 너비: 200px
 ```
 
----
-
-## 4. 핵심 요약
-
-- **구성요소:** 화면을 이루는 개별 요소
-- **컴포넌트:** 특정 역할을 수행하는 화면 구성 단위
-- **메인 헤더:** 웹페이지 상단의 주요 영역
-- **웹 그리드:** 행과 열을 기준으로 요소를 배치하는 구조
-- **`img`:** 이미지를 표시하는 태그
-- **`src`:** 이미지 파일의 경로
-- **`alt`:** 이미지 대체 텍스트
-- **상대경로:** 현재 파일 위치를 기준으로 지정
-- **절대경로:** 전체 위치를 기준으로 지정
-- **`padding`:** 박스 안쪽 여백
-- **`border-radius`:** 박스 모서리 둥글기
-- **`box-sizing: border-box`:** 지정한 크기 안에 padding과 border 포함
-
-
 # 10-21 UI/UX · Frontend 학습 기록
 
 **학습 날짜:** 2026-10-21  
@@ -662,8 +567,7 @@ button {
 
 ### 개념 7. Border-radius와 Overflow
 
-- 부모 박스에 `border-radius`를 적용하여 모서리를 둥글게 만듦
-- `overflow: hidden;`을 사용하면 박스 밖으로 넘치는 이미지 부분이 잘림
+- 앞서 배운 `border-radius`와 `overflow: hidden;`을 함께 사용하면 둥근 모서리 밖으로 넘치는 이미지 부분이 잘림
 
 ```css
 .image-box {
@@ -740,16 +644,7 @@ flowchart TD
 
 단, `top-banner`가 실제 광고나 독립적인 콘텐츠인 경우에는 용도에 맞는 구조를 별도로 고려해야 함.
 
-### 3-2. Hover 작동 흐름
-
-```mermaid
-flowchart LR
-    A["기본 버튼"] --> B["마우스 올리기"]
-    B --> C[":hover 적용"]
-    C --> D["스타일 변경"]
-```
-
-### 3-3. 이미지 자르기
+### 3-2. 이미지 자르기
 
 ```text
 원본 이미지
@@ -769,7 +664,7 @@ flowchart LR
 박스 비율에 맞지 않는 이미지 영역은 잘림
 ```
 
-### 3-4. Flexbox 공간 분배
+### 3-3. Flexbox 공간 분배
 
 ```text
 부모 컨테이너
@@ -785,26 +680,3 @@ flex-basis: 0;
 
 → 동일한 조건의 요소들이 공간을 균등하게 분배
 ```
-
----
-
-## 4. 핵심 요약
-
-| 개념 | 핵심 내용 |
-|---|---|
-| `span` | 인라인 요소 묶기 |
-| `a` | 링크 연결 |
-| `id` | 고유한 식별자, CSS에서는 `#` |
-| `class` | 재사용 가능한 선택자, CSS에서는 `.` |
-| `cursor: pointer` | 마우스 커서 변경 |
-| `:hover` | 마우스를 올렸을 때 스타일 적용 |
-| `object-fit: cover` | 이미지 비율 유지 및 영역 채우기 |
-| `h1` | 최상위 제목, 일반적으로 페이지의 주요 제목에 사용 |
-| `p` | 문단 |
-| `flex-grow: 1` | 남는 공간 확장 |
-| `flex-basis: 0` | 기본 크기 0을 기준으로 공간 분배 |
-| `overflow: hidden` | 넘치는 콘텐츠 숨기기 |
-| `border-radius` | 모서리 둥글게 |
-| Button Normalize | 버튼 기본 스타일 초기화 |
-| Material Symbols | Google Fonts의 아이콘 사용 |
-| `font-size` | 폰트 아이콘 크기 조절 |
