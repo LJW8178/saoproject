@@ -652,3 +652,159 @@ border-box
 - 브라우저마다 다를 수 있는 버튼의 기본 스타일을 초기화하거나 통일하는 작업
 
 ```css
+button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+```
+
+### 개념 7. Border-radius와 Overflow
+
+- 부모 박스에 `border-radius`를 적용하여 모서리를 둥글게 만듦
+- `overflow: hidden;`을 사용하면 박스 밖으로 넘치는 이미지 부분이 잘림
+
+```css
+.image-box {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+}
+```
+
+### 개념 8. Google Fonts / Material Symbols
+
+- Google Fonts에서 제공하는 아이콘 사용
+- 다양한 웹 인터페이스에서 활용 가능
+- 상업적 이용도 가능한 오픈소스 라이선스로 제공됨
+
+**아이콘 사용 예시**
+
+```html
+<span class="material-symbols-outlined">
+  search
+</span>
+```
+
+**아이콘 크기 조절**
+
+```css
+.material-symbols-outlined {
+  font-size: 32px;
+}
+```
+
+- 폰트 형태의 Material Symbols는 일반적으로 `font-size`로 크기 조절 가능
+- 일부 아이콘은 CSS 우선순위 또는 라이브러리 설정 때문에 크기 조절이 바로 적용되지 않을 수 있음
+
+**수업 메모:** 아이콘 링크에서 `200` 뒤의 `&`부터 삭제하면 모든 아이콘이 나온다고 학습함.
+
+**확인 필요:** 이 내용은 사용한 Google Fonts URL과 파라미터에 따라 달라짐. `&` 이후를 삭제하는 것이 모든 아이콘을 표시하는 공통 규칙은 아님.
+
+---
+
+## 3. 개념 도식화
+
+### 3-1. HTML 시맨틱 구조
+
+**질문:** `top-banner`, `utility-menu`, `main-header`를 웹 표준에 맞게 어떻게 묶을까?
+
+세 영역이 모두 웹사이트 상단 헤더에 속한다면 `<header>`를 상위 태그로 사용할 수 있다.
+
+```html
+<header class="site-header">
+  <div class="top-banner"></div>
+
+  <nav class="utility-menu"></nav>
+
+  <div class="main-header"></div>
+</header>
+```
+
+```mermaid
+flowchart TD
+    A["header.site-header"]
+    A --> B["div.top-banner"]
+    A --> C["nav.utility-menu"]
+    A --> D["div.main-header"]
+```
+
+- `<header>`: 페이지 상단의 소개 및 탐색 영역
+- `<nav>`: 내비게이션 링크 영역
+- `<div>`: 별도의 시맨틱 의미가 없는 일반 영역
+
+단, `top-banner`가 실제 광고나 독립적인 콘텐츠인 경우에는 용도에 맞는 구조를 별도로 고려해야 함.
+
+### 3-2. Hover 작동 흐름
+
+```mermaid
+flowchart LR
+    A["기본 버튼"] --> B["마우스 올리기"]
+    B --> C[":hover 적용"]
+    C --> D["스타일 변경"]
+```
+
+### 3-3. 이미지 자르기
+
+```text
+원본 이미지
+┌────────────────────────┐
+│                        │
+│         이미지         │
+│                        │
+└────────────────────────┘
+            ↓
+ object-fit: cover
+            ↓
+╭────────────────╮
+│  가운데 기준    │
+│  이미지 채우기  │
+╰────────────────╯
+
+박스 비율에 맞지 않는 이미지 영역은 잘림
+```
+
+### 3-4. Flexbox 공간 분배
+
+```text
+부모 컨테이너
+┌────────────────────────────┐
+│          display: flex     │
+├─────────┬─────────┬────────┤
+│ Item 1  │ Item 2  │ Item 3 │
+└─────────┴─────────┴────────┘
+
+각 Item:
+flex-grow: 1;
+flex-basis: 0;
+
+→ 동일한 조건의 요소들이 공간을 균등하게 분배
+```
+
+---
+
+## 4. 핵심 요약
+
+| 개념 | 핵심 내용 |
+|---|---|
+| `span` | 인라인 요소 묶기 |
+| `a` | 링크 연결 |
+| `id` | 고유한 식별자, CSS에서는 `#` |
+| `class` | 재사용 가능한 선택자, CSS에서는 `.` |
+| `cursor: pointer` | 마우스 커서 변경 |
+| `:hover` | 마우스를 올렸을 때 스타일 적용 |
+| `object-fit: cover` | 이미지 비율 유지 및 영역 채우기 |
+| `h1` | 최상위 제목, 일반적으로 페이지의 주요 제목에 사용 |
+| `p` | 문단 |
+| `flex-grow: 1` | 남는 공간 확장 |
+| `flex-basis: 0` | 기본 크기 0을 기준으로 공간 분배 |
+| `overflow: hidden` | 넘치는 콘텐츠 숨기기 |
+| `border-radius` | 모서리 둥글게 |
+| Button Normalize | 버튼 기본 스타일 초기화 |
+| Material Symbols | Google Fonts의 아이콘 사용 |
+| `font-size` | 폰트 아이콘 크기 조절 |
