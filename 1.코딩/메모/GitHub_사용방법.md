@@ -1,4 +1,4 @@
-# 오늘의 UI/UX · Frontend 학습 기록
+# 10-14 UI/UX · Frontend 학습 기록
 
 **학습 날짜:** 2026-10-14  
 **학습 주제:** GitHub 로컬 및 원격 저장소, Commit과 Push  
@@ -126,7 +126,7 @@ flowchart TD
 
 GitHub를 활용하면 파일을 이메일로 따로 옮기지 않아도 다른 컴퓨터에서 접근할 수 있다.
 
-# 오늘의 UI/UX · Frontend 학습 기록
+# 10-19 UI/UX · Frontend 학습 기록
 
 **학습 날짜:** 2026-10-19  
 **학습 주제:** Codex, MCP, Playwright 및 HTML/CSS 기초  
@@ -309,7 +309,7 @@ flowchart TD
 - **레이아웃:** 불필요한 높이와 여백을 줄여 공간 활용
 
 
-# 오늘의 UI/UX · Frontend 학습 기록
+# 10-20 UI/UX · Frontend 학습 기록
 
 **학습 날짜:** 2026-10-20  
 **학습 주제:** 웹페이지 구성요소 및 HTML/CSS 기초  
@@ -522,7 +522,7 @@ border-box
 - **`box-sizing: border-box`:** 지정한 크기 안에 padding과 border 포함
 
 
-# 오늘의 UI/UX · Frontend 학습 기록
+# 10-21 UI/UX · Frontend 학습 기록
 
 **학습 날짜:** 2026-10-21  
 **학습 주제:** HTML 시맨틱 구조, CSS 선택자, 레이아웃 및 아이콘 활용  
