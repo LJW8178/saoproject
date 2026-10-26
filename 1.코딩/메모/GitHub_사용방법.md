@@ -680,3 +680,150 @@ flex-basis: 0;
 
 → 동일한 조건의 요소들이 공간을 균등하게 분배
 ```
+모나미 모작 — 새로 배운 HTML/CSS 코드 정리
+비교 기준: 이전 마켓컬리 와이어프레임 실습(index.html, style.css, 후속 버전)과 이번 모나미 실습(index(2).html, style(2).css). 이미 익힌 기본적인 display: flex, gap, margin, padding, border-radius 설명은 생략하고 새로 등장했거나 사용 방식이 달라진 항목을 정리했다.
+
+1. HTML에서 새로 사용한 코드
+1-1. <a> — 하이퍼링크
+<a title="facebook" target="_blank" href="https://www.facebook.com/monami1960">
+    <img src="./image/facebook.gif" alt="facebook">
+</a>
+코드	기능	사용 이유
+<a>	클릭할 수 있는 링크	SNS 아이콘에서 외부 사이트로 이동
+href	이동 주소	연결할 사이트 지정
+target="_blank"	새 탭 열기	현재 페이지를 유지하고 SNS 방문
+title	보조 설명	링크 정보 제공
+
+
+- 기존과 다른 점: 기존에는 아이콘을 표시하는 데 집중했지만 이번에는 링크로 실제 이동할 수 있게 했다.
+- 참고: 외부 링크에는 rel="noopener noreferrer"를 함께 사용할 수 있다.
+1-2. <footer> — 하단 영역
+<footer>
+    <div class="con">하단</div>
+</footer>
+- 페이지나 섹션의 하단 정보를 나타내는 시맨틱 태그.
+- 사용 이유: 상단 header, 본문 main, 하단 footer를 의미에 따라 구분하기 위해서다.
+- 현재 파일은 실제 푸터 내용을 넣기 전의 틀만 만들었다.
+1-3. Emmet 축약 문법
+ul>li*3>a>img
+아래 HTML 구조를 빠르게 생성하는 VS Code의 Emmet 문법이다.
+<ul>
+    <li><a href=""><img src="" alt=""></a></li>
+    <li><a href=""><img src="" alt=""></a></li>
+    <li><a href=""><img src="" alt=""></a></li>
+</ul>
+- >: 자식 요소 생성
+- *3: 같은 요소 3개 생성
+- 사용 이유: SNS 목록처럼 반복되는 구조를 빠르게 작성하기 위해서다.
+2. CSS에서 새로 사용한 코드
+2-1. text-decoration: none — 링크 밑줄 제거
+a {
+    color: inherit;
+    text-decoration: none;
+}
+- color: inherit: 부모의 글자색을 상속.
+- text-decoration: none: 링크의 기본 밑줄 제거.
+- 사용 이유: HOME, SITE MAP, CONTACT US 메뉴를 일반 메뉴 텍스트처럼 보이게 하려고 사용했다.
+2-2. display: block — 이미지의 표시 방식
+img {
+    display: block;
+    background-color: #f1f1f1;
+}
+- 이미지가 블록 요소처럼 배치된다.
+- 인라인 이미지 아래에 생길 수 있는 글자 기준선 여백을 없애는 데 도움이 된다.
+- background-color는 이미지 영역에 연한 회색 배경을 준다. 이미지가 불투명하면 배경이 가려질 수 있다.
+2-3. ::after + content — 메뉴 구분선 추가
+.topmenu > ul > li:nth-child(1)::after,
+.topmenu > ul > li:nth-child(2)::after {
+    content: "|";
+    font-size: 8px;
+}
+결과: HOME | SITE MAP | CONTACT US
+코드	의미
+:nth-child(1)	첫 번째 자식 선택
+:nth-child(2)	두 번째 자식 선택
+::after	선택 요소의 끝에 가상 요소 생성
+content: "|"	가상 요소에 | 문자 표시
+font-size: 8px	구분선 문자 크기 조절
+
+
+- 사용 이유: HTML에 | 문자를 직접 넣지 않고 CSS로 구분선을 만들기 위해서다.
+- 마지막 CONTACT US 뒤에는 구분선이 필요 없으므로 첫 번째와 두 번째 항목에만 적용했다.
+2-4. rgba() — 투명도 있는 색상
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+- rgba(빨강, 초록, 파랑, 알파) 순서로 입력한다.
+- 마지막 0.2는 불투명도 20%를 의미한다 (0은 완전 투명, 1은 완전 불투명).
+- 사용 이유: 하단에 연한 반투명 검정 배경을 적용하려고 사용했다.
+2-5. transparent — 투명한 배경
+button {
+    background-color: transparent;
+}
+- 버튼 배경색을 투명하게 만든다.
+- 이전 실습의 background: none과 이 상황에서 보이는 효과는 유사하지만, background는 여러 배경 관련 속성을 다루는 축약 속성이다.
+2-6. border-bottom — 아래쪽 선만 지정
+header {
+    border-bottom: 1px solid #eaeaea;
+}
+- border와 달리 아래쪽에만 테두리를 만든다.
+- 사용 이유: 상단 헤더와 본문 사이에 구분선 하나를 만들기 위해서다.
+3. 기존 코드와 사용 방식이 달라진 부분
+3-1. 공통 컨테이너 .con
+.con {
+    width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+- 이전 마켓컬리 실습에서는 width: 1050px이었지만 이번에는 1400px이다.
+- 좌우 padding: 20px을 추가해 내부 콘텐츠가 가장자리에 붙지 않게 했다.
+- 주의: 현재 파일에는 .con에 box-sizing: border-box가 없어서 바깥 너비는 1440px이다.
+3-2. 중첩 Flexbox로 역할 분리
+.utmenu {
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+}
+
+.sns > ul {
+    display: flex;
+    gap: 8px;
+}
+- .utmenu: 왼쪽 그룹과 오른쪽 메뉴를 양 끝에 배치.
+- .link: 언어 버튼과 SNS 아이콘 묶음을 가로로 배치.
+- .sns > ul: SNS 아이콘 세 개를 가로로 배치.
+- 사용 이유: 부모마다 서로 다른 정렬 역할을 맡기기 위해서다.
+4. 현재 코드에서 점검할 부분
+위치	점검 내용
+.con	width: 1400px에 좌우 패딩 각 20px이 더해져 바깥 너비 1440px
+.topmenu > ul > li	gap: 20px이 링크와 ::after 구분선 사이에도 적용됨
+TOP 메뉴 링크	href="#"는 실제 목적지가 없는 임시 링크
+SNS 링크	새 탭 외부 링크에 rel="noopener noreferrer" 고려 가능
+.top-bar, main, footer	실제 콘텐츠를 넣기 전 임시 문구·디자인이 남아 있음
+
+
+5. 빠른 복습표
+코드	기억할 핵심
+<a href="...">	다른 페이지로 이동하는 링크
+target="_blank"	링크를 새 탭으로 열기
+title	링크 등의 보조 설명
+<footer>	하단 영역을 나타내는 시맨틱 태그
+ul>li*3>a>img	Emmet으로 반복 HTML 빠르게 생성
+text-decoration: none	링크의 밑줄 제거
+display: block	블록 요소처럼 표시
+::after	요소 끝에 가상 요소 만들기
+content	가상 요소에 표시할 내용 설정
+rgba()	투명도가 포함된 색상 지정
+transparent	투명한 배경색
+border-bottom	요소 아래쪽에만 테두리 만들기
+
+
+이번 복습 우선순위: ::after와 content 조합 → 중첩 Flexbox의 각 부모 역할 → <a> 링크 속성.
