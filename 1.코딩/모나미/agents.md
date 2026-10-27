@@ -7,6 +7,8 @@ sns icon 30x30
 ㄴ margin 7px
 
 HOMESITE MAPCONTACT US
+https://www.youtube.com/channel/UC7lJDw-5bYXnAGNHh1uUG3A
+https://www.facebook.com/monami1960
 
 ## 모나미 홈페이지 `head_top` 실측 스타일
 
