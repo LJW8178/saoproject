@@ -122,8 +122,27 @@ button {
 }
 .topmenu {
     border: 1px solid orange;
+
 }
 .topmenu > ul {
     display: flex;
+    align-items: center; 
+    height: 100%;
+    gap: 20px;
+    font-size: 12px;
+    color: #9b9a9a;
 
 }
+.topmenu > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+.topmenu > ul > li:nth-child(1)::after ,
+.topmenu > ul > li:nth-child(2)::after {
+    content: |;
+    font-size: 8px;
+}
+
+
