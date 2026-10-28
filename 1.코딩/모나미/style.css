@@ -102,19 +102,14 @@ header {
     border-bottom: 1px solid #eaeaea;
 }
 /* 투명도 0 ~ 1 */
-   
-.header-con {
-    flex-direction: column;
-}
 
-.utmenu {
+.utmenu-con {
     display: flex;
     justify-content: space-between;
     height: 58px;
-    
 }
-.link {
-    display: flex;
+.links {
+    display: flex; gap: 12px;
     align-items: center;
 }
 
@@ -159,8 +154,22 @@ header {
 }
 
 .top-bar {
-    /* border: 1px solid red; */
+    border: 1px solid red; 
+
 }
+.topbar-con {
+    justify-content: space-between;
+}
+.logo-box {
+    border: 1px solid orange;
+}
+.top-bar > nav {
+    border: 1px solid orange;
+
+.nav-search {
+    border: 1px solid orange;
+}
+
 main {
     border: 1px solid red;
 }
