@@ -1,0 +1,68 @@
+- generic [active] [ref=f10e1]:
+  - banner [ref=f10e2]:
+    - generic [ref=f10e4]:
+      - generic [ref=f10e5]:
+        - button "KOR arrow_drop_down" [ref=f10e7]:
+          - generic [ref=f10e8]: KOR
+          - generic [ref=f10e9]: arrow_drop_down
+        - list [ref=f10e11]:
+          - listitem [ref=f10e12]:
+            - link [ref=f10e13] [cursor=pointer]:
+              - /url: https://www.facebook.com/monami1960
+              - img "facebook" [ref=f10e14]
+          - listitem [ref=f10e15]:
+            - link [ref=f10e16] [cursor=pointer]:
+              - /url: https://www.instagram.com/monami_official/
+              - img "instagram" [ref=f10e17]
+          - listitem [ref=f10e18]:
+            - link [ref=f10e19] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UC7lJDw-5bYXnAGNHh1uUG3A
+              - img "youtube" [ref=f10e20]
+      - list [ref=f10e22]:
+        - listitem [ref=f10e23]:
+          - link "HOMESITE" [ref=f10e24] [cursor=pointer]:
+            - /url: "#"
+          - text: "|"
+        - listitem [ref=f10e25]:
+          - link "MAPCONTACT" [ref=f10e26] [cursor=pointer]:
+            - /url: "#"
+          - text: "|"
+        - listitem [ref=f10e27]:
+          - link "US" [ref=f10e28] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=f10e30]:
+      - heading [level=1] [ref=f10e31]:
+        - link [ref=f10e32] [cursor=pointer]:
+          - /url: https://www.monami.com/index.php
+          - img "로고 이미지" [ref=f10e33]
+      - navigation [ref=f10e34]:
+        - list [ref=f10e35]:
+          - listitem [ref=f10e36]:
+            - link "모나미소개" [ref=f10e37] [cursor=pointer]:
+              - /url: "#"
+            - generic: 2차 메뉴
+          - listitem [ref=f10e38]:
+            - link "모나미제품" [ref=f10e39] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f10e40]:
+            - link "NEWS & VIDEO" [ref=f10e41] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f10e42]:
+            - link "브랜드스토어" [ref=f10e43] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f10e44]:
+            - link "모나미 미술대회" [ref=f10e45] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f10e46]:
+            - link "고객지원" [ref=f10e47] [cursor=pointer]:
+              - /url: "#"
+          - listitem [ref=f10e48]:
+            - link "기업 구매 / 개발" [ref=f10e49] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=f10e50]:
+        - generic [ref=f10e51]: search
+        - generic [ref=f10e52]: menu
+  - main [ref=f10e53]:
+    - generic [ref=f10e54]: 컨텐츠
+  - contentinfo [ref=f10e55]:
+    - generic [ref=f10e56]: 하단

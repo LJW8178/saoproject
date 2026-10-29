@@ -83,3 +83,28 @@ nav-search
 | 모나미 미술대회 | 0px | 0px | 16.1px | 16.1px |
 | 고객지원 | 0px | 0px | 42.0px | 42.0px |
 | 기업 구매 / 개발 | 0px | 0px | 15.8px | 15.8px |
+
+## 현재 메뉴와 빨간 밑줄의 위치 기준
+
+- 현재 `ex.html`에서 `.menu02`는 첫 번째 `li`의 자식이다. `ex_style.css`에서 `.top-bar`는 `position: relative`이고 `li`는 기본값인 `position: static`이다. 따라서 `.menu02 { position: absolute; width: 100%; left: 0; top: 100%; }`는 `.top-bar`의 전체 너비를 기준으로 펼쳐진다. `nav > ul > li:hover > .menu02`로 hover 애니메이션도 연결되어 있다.
+- 3번 방법을 적용하기 전에는 `li::after`도 절대 배치되어 같은 `.top-bar`를 기준으로 삼았다. 당시 `width: 100%`가 해당 `li`가 아닌 `.top-bar`의 너비로 계산되어 빨간 밑줄이 화면 전체로 늘어났다. 현재는 `li::after` 규칙을 제거했다.
+
+## 빨간 밑줄만 각 `li` 너비에 맞추는 방법
+
+1. **`li`의 안쪽 그림자 사용:** `nav > ul > li { box-shadow: inset 0 -2px #c40f39; }`를 쓰면 그림자가 각 메뉴 칸 너비에 맞고, `.menu02`의 위치 기준에는 영향을 주지 않는다. hover 때만 보이게 하려면 이 속성을 `nav > ul > li:hover`에 둔다.
+2. **`li`의 아래쪽 테두리 사용:** `nav > ul > li { border-bottom: 2px solid #c40f39; box-sizing: border-box; }`를 쓰면 테두리가 각 `li` 너비만 차지한다. 테두리가 요소의 크기나 정렬에 영향을 줄 수 있으므로 기존 높이와 글자 정렬을 확인한다.
+3. **`::after`를 링크 `a`로 옮기기:** 현재 적용한 방법이다. `li > a`에 `position: relative`를 주고 `li > a::after`를 절대 배치한다. 링크가 메뉴 칸 전체를 차지하도록 `li`의 좌우 `27px` 패딩을 `a`로 옮기고 `a`에 `height: 100%`를 준다. `li`는 `position: static`이므로 `.menu02`는 계속 `.top-bar`를 기준으로 한다.
+
+현재 `ex_style.css`에는 3번을 적용했다. `li`의 좌우 패딩을 `a`로 옮기고, `a`에 `position: relative`와 `height: 100%`를 준 뒤 빨간 밑줄을 `a::after`로 옮겼다. `li`는 `position: static`을 유지하므로 `.menu02`는 계속 `.top-bar` 전체 너비로 펼쳐진다.
+
+## 3번 적용 전후 코드 차이
+
+| 항목 | 적용 전 | 현재 코드 |
+| --- | --- | --- |
+| 좌우 여백 | `li`에 `padding-left/right: 27px` | `a`에 같은 패딩을 적용하고 `li`에서는 제거 |
+| 링크 높이 | 글자 높이만큼 | `a { display: flex; align-items: center; height: 100%; }`로 메뉴 칸 높이만큼 |
+| 밑줄의 기준 | 절대 배치한 `li::after`가 `.top-bar`를 기준으로 함 | `a { position: relative; }` 안의 `a::after`가 링크를 기준으로 함 |
+| 밑줄 너비 | `width: 100%`가 `.top-bar` 전체 너비 | 기본 `0`, 링크 hover 때 `100%`가 해당 링크와 `li`의 너비 |
+| 하위 메뉴 | `li`의 자식이지만 `.top-bar`를 기준으로 전체 너비 | 동일함. `a`는 `.menu02`의 조상이 아니어서 메뉴 위치 기준에 영향 없음 |
+
+현재 밑줄은 `a::after { width: 0; transition: 0.3s; }`에서 시작해 `a:hover::after { width: 100%; }`로 늘어난다. 메뉴는 `li:hover`로 열리지만 밑줄은 `a:hover`에만 반응하므로, 포인터가 링크에서 하위 메뉴로 내려가면 메뉴는 열린 채로 밑줄은 줄어든다. 밑줄을 메뉴 위에 머무는 동안에도 유지하려면 hover 선택자를 `li:hover > a::after`로 바꿀 수 있다.
