@@ -1,0 +1,114 @@
+/* ============================================================
+   공통 코드: 1코딩/모나미/index.html · style.css 기준
+   모나미에 등장한 CSS 속성만 사용합니다.
+   세로 배치는 기본 블록 흐름, 가로 배치는 display:flex로 구성합니다.
+   글꼴·이미지는 같은 정답 폴더의 로컬 파일을 참조합니다.
+============================================================ */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../font/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../font/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../font/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  background-color: #ffffff;
+}
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+  font-size: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  font-family: 'Pretendard', sans-serif;
+}
+img {
+  display: block;
+  background-color: transparent;
+}
+/* 모나미의 .con: 콘텐츠 너비와 가운데 배치, 기본 가로 배치를 담당합니다.
+   내용 1400px + 좌우 padding 각 20px = 바깥 너비 1440px입니다.
+   원본과 정답은 1600px PC 화면에서 비교합니다. */
+.con {
+  width: 1400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+/* OSU-04 시작 — 이벤트안내: 690px 카드 2개와 20px 간격, 사진 아래 문구 배치 */
+
+.events {
+  padding:0 0 64px;
+}
+.event-con {
+  display:block;
+}
+.event-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:0 0 26px;
+}
+.event-heading h2 {
+  font-size:26px;
+  font-weight:500;
+}
+.event-heading span {
+  font-size:11px;
+  color:#777777;
+}
+.event-row {
+  display:flex;
+  gap:20px;
+}
+.event-card {
+  width:690px;
+  background-color:#f7f7f4;
+}
+.event-card > img {
+  width:690px;
+}
+.event-copy {
+  padding:24px;
+}
+.event-copy h3 {
+  font-size:19px;
+}
+.event-copy p {
+  margin:14px 0 0;
+  font-size:12px;
+  color:#777777;
+}
+
+/* OSU-04 끝 */

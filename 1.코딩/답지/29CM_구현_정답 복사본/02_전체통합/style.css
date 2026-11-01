@@ -1,0 +1,323 @@
+/* ============================================================
+   공통 코드: 1코딩/모나미/index.html · style.css 기준
+   모나미에 등장한 CSS 속성만 사용합니다.
+   세로 배치는 기본 블록 흐름, 가로 배치는 display:flex로 구성합니다.
+   글꼴·이미지는 같은 정답 폴더의 로컬 파일을 참조합니다.
+============================================================ */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../font/Pretendard-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../font/Pretendard-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../font/Pretendard-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+body {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  color: #222222;
+  background-color: #ffffff;
+}
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+  font-size: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: inherit;
+  font-family: 'Pretendard', sans-serif;
+}
+img {
+  display: block;
+  background-color: transparent;
+}
+/* 모나미의 .con: 콘텐츠 너비와 가운데 배치, 기본 가로 배치를 담당합니다.
+   내용 1400px + 좌우 padding 각 20px = 바깥 너비 1440px입니다.
+   원본과 정답은 1600px PC 화면에서 비교합니다. */
+.con {
+  width: 1400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+/* 메인 세 구간이 공유하는 카드 CSS입니다.
+   한 행: 배너 560px + 간격 28px + 피드 영역 812px = 1400px.
+   피드 영역: 카드 396px × 2 + 간격 20px = 812px.
+   세로는 div 기본 흐름으로, 가로로 놓을 부모에만 Flex를 줍니다. */
+.editorial-group {
+  padding:0 0 36px;
+}
+.editorial-con {
+  gap:28px;
+}
+.campaign-column {
+  width:560px;
+}
+.campaign-image {
+  width:560px;
+}
+.campaign-caption {
+  padding:24px 0 0;
+}
+.campaign-caption > span {
+  font-size:11px;
+  color:#888888;
+}
+.campaign-caption h2 {
+  font-size:30px;
+  font-weight:700;
+  margin:12px 0;
+}
+.campaign-caption p {
+  font-size:14px;
+  color:#777777;
+}
+.feed-pair {
+  width:812px;
+  display:flex;
+  gap:20px;
+}
+.feed-card {
+  width:396px;
+  border-bottom:1px solid #dddddd;
+}
+.feed-photo {
+  width:396px;
+}
+.feed-copy {
+  padding:24px 20px 8px;
+}
+.feed-copy h2 {
+  font-size:22px;
+  font-weight:700;
+  margin:0 0 12px;
+}
+.feed-copy > p {
+  font-size:13px;
+  color:#777777;
+  margin:0 0 20px;
+}
+.feed-product {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  border-bottom:1px solid #eeeeee;
+  padding:18px 0;
+}
+.feed-product-image {
+  width:64px;
+}
+.feed-product-image img {
+  width:64px;
+}
+.feed-product-info {
+  width:280px;
+}
+.feed-product-brand {
+  font-size:11px;
+  font-weight:700;
+  margin:0 0 6px;
+}
+.feed-product-name {
+  font-size:12px;
+  margin:0 0 8px;
+}
+.feed-product-price {
+  display:flex;
+  gap:9px;
+  align-items:center;
+}
+.feed-discount {
+  font-size:13px;
+  color:#ff4800;
+  font-weight:700;
+}
+.feed-price {
+  font-size:14px;
+  font-weight:700;
+}
+.feed-benefit {
+  display:flex;
+  gap:8px;
+  font-size:10px;
+  color:#888888;
+  margin:8px 0 0;
+}
+
+/* M29-01 시작 — 상단: 모나미처럼 상단을 줄별로 나누고 큰 메뉴·카테고리의 가로 부모를 구분 */
+
+.logo-con {
+  height:76px;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo-box img {
+  width:88px;
+}
+.header-util {
+  display:flex;
+  gap:22px;
+  align-items:center;
+  font-size:11px;
+}
+.header-util > a {
+  border:1px solid #dddddd;
+  border-radius:3px;
+  padding:8px 12px;
+}
+.feature-nav-con {
+  height:84px;
+  align-items:center;
+  justify-content:space-between;
+}
+.feature-nav > ul {
+  display:flex;
+  gap:25px;
+  align-items:center;
+}
+.feature-nav > ul > li {
+  font-size:40px;
+  font-weight:700;
+}
+.feature-nav > ul > li > a:hover {
+  color:#ff4800;
+}
+.search-label {
+  font-size:12px;
+  font-weight:700;
+  border-bottom:2px solid #222222;
+  padding:8px 0;
+}
+.category-con {
+  height:76px;
+  align-items:center;
+}
+.category-nav > ul {
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+.category-nav > ul > li {
+  font-size:14px;
+  font-weight:700;
+}
+.category-nav > ul > li > a:hover {
+  color:#ff4800;
+}
+
+/* M29-01 끝 */
+
+/* M29-02 시작 — 메인피드01: 560px 배너와 2열 피드, 카드 안의 64px 사진·정보 묶음 */
+
+/* 이 구간은 공통의 editorial-con / campaign-column / feed-pair 규칙을 씁니다.
+   공통 CSS의 가로 구조를 유지하면서 사진·제목·상품 정보를 교체합니다.
+   상품명이 길어지면 기본 줄바꿈으로 높이가 늘어나도록 구성했습니다. */
+
+/* M29-02 끝 */
+
+/* M29-03 시작 — 메인피드02: 560px 배너와 2열 피드, 카드 안의 64px 사진·정보 묶음 */
+
+/* 이 구간은 공통의 editorial-con / campaign-column / feed-pair 규칙을 씁니다.
+   공통 CSS의 가로 구조를 유지하면서 사진·제목·상품 정보를 교체합니다.
+   상품명이 길어지면 기본 줄바꿈으로 높이가 늘어나도록 구성했습니다. */
+
+/* M29-03 끝 */
+
+/* M29-04 시작 — 메인피드03: 560px 배너와 2열 피드, 카드 안의 64px 사진·정보 묶음 */
+
+/* 이 구간은 공통의 editorial-con / campaign-column / feed-pair 규칙을 씁니다.
+   공통 CSS의 가로 구조를 유지하면서 사진·제목·상품 정보를 교체합니다.
+   상품명이 길어지면 기본 줄바꿈으로 높이가 늘어나도록 구성했습니다. */
+
+/* M29-04 끝 */
+
+/* M29-05 시작 — 푸터: 고객센터와 4개 안내 칸을 구분하고 회사 정보는 블록으로 쌓기 */
+
+.site-footer {
+  padding:55px 0 44px;
+  border-bottom:1px solid #eeeeee;
+}
+.footer-con {
+  display:block;
+}
+.footer-top {
+  display:flex;
+  gap:50px;
+  padding:0 0 40px;
+  border-bottom:1px solid #eeeeee;
+}
+.customer-center {
+  width:320px;
+}
+.customer-center h2 {
+  font-size:15px;
+  font-weight:700;
+  margin:0 0 12px;
+}
+.customer-center .customer-tel {
+  font-size:30px;
+  color:#222222;
+  font-weight:700;
+}
+.customer-center p {
+  font-size:12px;
+  color:#777777;
+  margin:8px 0;
+}
+.customer-center > a {
+  display:block;
+  font-size:12px;
+  margin:18px 0 0;
+}
+.footer-group {
+  width:220px;
+}
+.footer-group h2 {
+  font-size:14px;
+  font-weight:700;
+  margin:0 0 22px;
+}
+.footer-group p {
+  font-size:12px;
+  color:#777777;
+  margin:12px 0;
+}
+.footer-policies {
+  display:flex;
+  gap:24px;
+  font-size:12px;
+  margin:28px 0;
+}
+.company-info p {
+  font-size:11px;
+  color:#999999;
+  margin:9px 0;
+}
+
+/* M29-05 끝 */
