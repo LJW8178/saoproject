@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 14px;
+    color: #222222;
+    background-color: #ffffff;
+}
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    font-size: inherit;
+    font-weight: normal;
+}
+img {
+    display: block;
+    background-color: transparent;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    color: inherit;
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* 답지처럼 세 줄을 기본 블록 흐름으로 배치합니다. */
+.con {
+    width: 1400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.action-bar {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-logo img {
+    width: 88px;
+}
+.header-actions {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    font-size: 11px;
+}
+.header-actions > nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.header-actions > nav > ul > li > a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.login-but {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 8px 12px;
+    font-size: 11px;
+}
+.main-nav {
+    width: 100%;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.m-nav-list > nav > ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+/* 아이콘과 밑줄 효과는 원본 코드를 유지합니다. */
+.m-nav-list > nav > ul > li > a {
+    position: relative;
+}
+.m-nav-list > nav > ul > li > a::after {
+    content: "";
+    height: 6px;
+    width: 0;
+    background-color: #1f1f1f;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.m-nav-list > nav > ul > li > a:hover::after {
+    width: 100%;
+}
+.search > span {
+    font-size: 44px;
+}
+.category {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.category > nav > ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.category > nav > ul > li > a {
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+}
+.category > nav > ul > li > a::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: #1f1f1f;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.category > nav > ul > li > a:hover::after {
+    width: 100%;
+}
+.sub-category {
+    font-size: 14px;
+    font-weight: 700;
+}

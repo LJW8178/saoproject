@@ -1,0 +1,99 @@
+- banner [ref=f1e2]:
+  - generic [ref=f1e4]:
+    - heading [level=1] [ref=f1e5]:
+      - link "29CM 홈" [ref=f1e6] [cursor=pointer]:
+        - /url: https://www.29cm.co.kr/
+        - img "29CM" [ref=f1e7]
+    - generic [ref=f1e8]:
+      - navigation "사용자 메뉴" [ref=f1e9]:
+        - list [ref=f1e10]:
+          - listitem [ref=f1e11]:
+            - link "마이페이지" [ref=f1e12] [cursor=pointer]:
+              - /url: https://www.29cm.co.kr/my-page
+              - generic [aria-hidden] [ref=f1e13]: account_circle
+              - text: 마이페이지
+          - listitem [ref=f1e14]:
+            - link "좋아요" [ref=f1e15] [cursor=pointer]:
+              - /url: https://www.29cm.co.kr/my-like/products
+              - generic [aria-hidden] [ref=f1e16]: favorite
+              - text: 좋아요
+          - listitem [ref=f1e17]:
+            - link "장바구니" [ref=f1e18] [cursor=pointer]:
+              - /url: https://www.29cm.co.kr/order/cart
+              - generic [aria-hidden] [ref=f1e19]: shopping_basket
+              - text: 장바구니
+      - link "로그인/회원가입" [ref=f1e20] [cursor=pointer]:
+        - /url: https://auth.29cm.co.kr/login?redirect_uri=https%3A%2F%2Fwww.29cm.co.kr%2F
+  - generic [ref=f1e22]:
+    - navigation "주요 메뉴" [ref=f1e23]:
+      - list [ref=f1e24]:
+        - listitem [ref=f1e25]:
+          - link "Special-Order" [ref=f1e26] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/store/special-order
+        - listitem [ref=f1e27]:
+          - link "Showcase" [ref=f1e28] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/store/showcase
+        - listitem [ref=f1e29]:
+          - link "PT" [ref=f1e30] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/store/pt
+        - listitem [ref=f1e31]:
+          - link "29Magazine" [ref=f1e32] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/content/29magazine
+    - search "29CM 상품 검색" [ref=f1e33]:
+      - generic [ref=f1e34]: 검색어
+      - searchbox "검색어" [ref=f1e35]
+      - button "검색" [ref=f1e36] [cursor=pointer]:
+        - generic [aria-hidden] [ref=f1e37]: search
+  - generic [ref=f1e39]:
+    - navigation "상품 카테고리" [ref=f1e40]:
+      - list [ref=f1e41]:
+        - listitem [ref=f1e42]:
+          - link "BEST" [ref=f1e43] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/store/best-items
+        - listitem [ref=f1e44]:
+          - link "WOMEN" [ref=f1e45] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EC%97%AC%EC%84%B1
+        - listitem [ref=f1e46]:
+          - link "MEN" [ref=f1e47] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EB%82%A8%EC%84%B1
+        - listitem [ref=f1e48]:
+          - link "INTERIOR" [ref=f1e49] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4
+        - listitem [ref=f1e50]:
+          - link "KITCHEN" [ref=f1e51] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EC%A3%BC%EB%B0%A9
+        - listitem [ref=f1e52]:
+          - link "ELECTRONICS" [ref=f1e53] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EA%B0%80%EC%A0%84
+        - listitem [ref=f1e54]:
+          - link "DIGITAL" [ref=f1e55] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EB%94%94%EC%A7%80%ED%84%B8
+        - listitem [ref=f1e56]:
+          - link "BEAUTY" [ref=f1e57] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EB%B7%B0%ED%8B%B0
+        - listitem [ref=f1e58]:
+          - link "FOOD" [ref=f1e59] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EC%8B%9D%ED%92%88
+        - listitem [ref=f1e60]:
+          - link "LEISURE" [ref=f1e61] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EB%A0%88%EC%A0%80
+        - listitem [ref=f1e62]:
+          - link "KIDS" [ref=f1e63] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%ED%82%A4%EC%A6%88
+        - listitem [ref=f1e64]:
+          - link "TICKET" [ref=f1e65] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%ED%8B%B0%EC%BC%93
+        - listitem [ref=f1e66]:
+          - link "CULTURE" [ref=f1e67] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EB%AC%B8%ED%99%94
+        - listitem [ref=f1e68]:
+          - link "EARTH" [ref=f1e69] [cursor=pointer]:
+            - /url: https://shop.29cm.co.kr/search?keyword=%EC%B9%9C%ED%99%98%EA%B2%BD
+    - navigation "이벤트와 룩북" [ref=f1e70]:
+      - list [ref=f1e71]:
+        - listitem [ref=f1e72]:
+          - link "Event" [ref=f1e73] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/store/event
+        - listitem [ref=f1e74]:
+          - link "Lookbook" [ref=f1e75] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/store/lookbook
