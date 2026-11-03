@@ -1,0 +1,372 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading [level=1] [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: "#M29-02"
+          - img "29CM" [ref=e6]
+      - generic [ref=e7]:
+        - generic [ref=e8]: 마이페이지
+        - generic [ref=e9]: ♡ 좋아요
+        - generic [ref=e10]: 장바구니
+        - link "로그인/회원가입" [ref=e11] [cursor=pointer]:
+          - /url: https://www.29cm.co.kr/
+    - generic [ref=e12]:
+      - navigation [ref=e13]:
+        - list [ref=e14]:
+          - listitem [ref=e15]:
+            - link "Special-Order" [ref=e16] [cursor=pointer]:
+              - /url: "#M29-02"
+          - listitem [ref=e17]:
+            - link "Showcase" [ref=e18] [cursor=pointer]:
+              - /url: "#M29-03"
+          - listitem [ref=e19]:
+            - link "PT" [ref=e20] [cursor=pointer]:
+              - /url: "#M29-04"
+          - listitem [ref=e21]:
+            - link "29Magazine" [ref=e22] [cursor=pointer]:
+              - /url: "#M29-04"
+      - generic [ref=e23]: SEARCH
+    - navigation [ref=e25]:
+      - list [ref=e26]:
+        - listitem [ref=e27]:
+          - link "BEST" [ref=e28] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e29]:
+          - link "WOMEN" [ref=e30] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e31]:
+          - link "MEN" [ref=e32] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e33]:
+          - link "INTERIOR" [ref=e34] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e35]:
+          - link "KITCHEN" [ref=e36] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e37]:
+          - link "ELECTRONICS" [ref=e38] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e39]:
+          - link "DIGITAL" [ref=e40] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e41]:
+          - link "BEAUTY" [ref=e42] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e43]:
+          - link "FOOD" [ref=e44] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e45]:
+          - link "LEISURE" [ref=e46] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e47]:
+          - link "KIDS" [ref=e48] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e49]:
+          - link "TICKET" [ref=e50] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e51]:
+          - link "CULTURE" [ref=e52] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e53]:
+          - link "EARTH" [ref=e54] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e55]:
+          - link "Event" [ref=e56] [cursor=pointer]:
+            - /url: "#M29-02"
+        - listitem [ref=e57]:
+          - link "Lookbook" [ref=e58] [cursor=pointer]:
+            - /url: "#M29-02"
+  - main [ref=e59]:
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - img "함께하고픈 취향을 손에 넣는 날" [ref=e64]
+        - generic [ref=e65]:
+          - text: 29DAY
+          - heading "함께하고픈 취향을 손에 넣는 날" [level=2] [ref=e66]
+          - paragraph [ref=e67]: 오늘을 위한 특별한 브랜드와 상품을 만나보세요.
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - img "인플루언서 곰송이의 선택" [ref=e70]
+          - generic [ref=e71]:
+            - heading "인플루언서 곰송이의 선택" [level=2] [ref=e72]
+            - paragraph [ref=e73]: 부쩍 추워진 날씨에 필요할 아우터예요.
+            - generic [ref=e74]:
+              - img "[2차] PADDED MIDDLE LEATHER JACKET" [ref=e76]
+              - generic [ref=e77]:
+                - paragraph [ref=e78]: 플리즈프로젝트
+                - heading "[2차] PADDED MIDDLE LEATHER JACKET" [level=3] [ref=e79]
+                - generic [ref=e80]:
+                  - generic [ref=e81]: 30 %
+                  - generic [ref=e82]: 132,300원
+                - generic [ref=e83]:
+                  - generic [ref=e84]: 브랜드 추천 상품
+                  - generic [ref=e85]: ♡
+            - generic [ref=e86]:
+              - img "[곰송이PICK] Wool Tencel Mock-Neck Long Sleeve T-Shirt_Charcoal" [ref=e88]
+              - generic [ref=e89]:
+                - paragraph [ref=e90]: 더바넷
+                - heading "[곰송이PICK] Wool Tencel Mock-Neck Long Sleeve T-Shirt_Charcoal" [level=3] [ref=e91]
+                - generic [ref=e92]:
+                  - generic [ref=e93]: 19 %
+                  - generic [ref=e94]: 47,650원
+                - generic [ref=e95]:
+                  - generic [ref=e96]: 브랜드 추천 상품
+                  - generic [ref=e97]: ♡
+            - generic [ref=e98]:
+              - img "[곰송이PICK][29CM 단독] 래빗 코위찬 니트 집업 차콜" [ref=e100]
+              - generic [ref=e101]:
+                - paragraph [ref=e102]: 일리고
+                - heading "[곰송이PICK][29CM 단독] 래빗 코위찬 니트 집업 차콜" [level=3] [ref=e103]
+                - generic [ref=e104]:
+                  - generic [ref=e105]: 37 %
+                  - generic [ref=e106]: 102,200원
+                - generic [ref=e107]:
+                  - generic [ref=e108]: 브랜드 추천 상품
+                  - generic [ref=e109]: ♡
+        - generic [ref=e110]:
+          - img "내가 찾던 그 빈티지" [ref=e111]
+          - generic [ref=e112]:
+            - heading "내가 찾던 그 빈티지" [level=2] [ref=e113]
+            - paragraph [ref=e114]: 더블유케이엔디 겨울 신상이에요.
+            - generic [ref=e115]:
+              - img "STUDDED DAMAGE KNIT (DEEP KHAKI)" [ref=e117]
+              - generic [ref=e118]:
+                - paragraph [ref=e119]: 더블유케이엔디 프로젝트
+                - heading "STUDDED DAMAGE KNIT (DEEP KHAKI)" [level=3] [ref=e120]
+                - generic [ref=e121]:
+                  - generic [ref=e122]: 5 %
+                  - generic [ref=e123]: 273,600원
+                - generic [ref=e124]:
+                  - generic [ref=e125]: 브랜드 추천 상품
+                  - generic [ref=e126]: ♡
+            - generic [ref=e127]:
+              - img "STUDDED DAMAGE KNIT (CHOCOLATE KHAKI)" [ref=e129]
+              - generic [ref=e130]:
+                - paragraph [ref=e131]: 더블유케이엔디 프로젝트
+                - heading "STUDDED DAMAGE KNIT (CHOCOLATE KHAKI)" [level=3] [ref=e132]
+                - generic [ref=e133]:
+                  - generic [ref=e134]: 5 %
+                  - generic [ref=e135]: 273,600원
+                - generic [ref=e136]:
+                  - generic [ref=e137]: 브랜드 추천 상품
+                  - generic [ref=e138]: ♡
+            - generic [ref=e139]:
+              - img "[진주 PICK] STUDDED DAMAGE KNIT (DEEP RED)" [ref=e141]
+              - generic [ref=e142]:
+                - paragraph [ref=e143]: 더블유케이엔디 프로젝트
+                - heading "[진주 PICK] STUDDED DAMAGE KNIT (DEEP RED)" [level=3] [ref=e144]
+                - generic [ref=e145]:
+                  - generic [ref=e146]: 5 %
+                  - generic [ref=e147]: 273,600원
+                - generic [ref=e148]:
+                  - generic [ref=e149]: 브랜드 추천 상품
+                  - generic [ref=e150]: ♡
+    - generic [ref=e153]:
+      - generic [ref=e154]:
+        - img "이달에 딱 한 번 열리는 기회" [ref=e155]
+        - generic [ref=e156]:
+          - text: ONLY ONCE A MONTH
+          - heading "이달에 딱 한 번 열리는 기회" [level=2] [ref=e157]
+          - paragraph [ref=e158]: 취향을 완성하는 브랜드를 새로운 혜택으로 만나보세요.
+      - generic [ref=e159]:
+        - generic [ref=e160]:
+          - img "추위 대비 마지막 날" [ref=e161]
+          - generic [ref=e162]:
+            - heading "추위 대비 마지막 날" [level=2] [ref=e163]
+            - paragraph [ref=e164]: 세 브랜드 혜택, 종료되기 전에 만나보세요.
+            - generic [ref=e165]:
+              - img "[29CM 단독] 퍼 배색 구스 다운 NEP6XMA04_6G" [ref=e167]
+              - generic [ref=e168]:
+                - paragraph [ref=e169]: 온앤온
+                - heading "[29CM 단독] 퍼 배색 구스 다운 NEP6XMA04_6G" [level=3] [ref=e170]
+                - generic [ref=e171]:
+                  - generic [ref=e172]: 43 %
+                  - generic [ref=e173]: 294,800원
+                - generic [ref=e174]:
+                  - generic [ref=e175]: 브랜드 추천 상품
+                  - generic [ref=e176]: ♡
+            - generic [ref=e177]:
+              - img "[29EDITION] 2Colors_소프트 레더 와이드 슬릿 2WAY 미들&앵클 웨지 부츠 I KM477" [ref=e179]
+              - generic [ref=e180]:
+                - paragraph [ref=e181]: 코모레비뮤지엄
+                - heading "[29EDITION] 2Colors_소프트 레더 와이드 슬릿 2WAY 미들&앵클 웨지 부츠 I KM477" [level=3] [ref=e182]
+                - generic [ref=e183]:
+                  - generic [ref=e184]: 33 %
+                  - generic [ref=e185]: 99,400원
+                - generic [ref=e186]:
+                  - generic [ref=e187]: 브랜드 추천 상품
+                  - generic [ref=e188]: ♡
+            - generic [ref=e189]:
+              - img "OVERSIZED BASIC JACKET (KHAKI STRIPE)" [ref=e191]
+              - generic [ref=e192]:
+                - paragraph [ref=e193]: 에토스
+                - heading "OVERSIZED BASIC JACKET (KHAKI STRIPE)" [level=3] [ref=e194]
+                - generic [ref=e195]:
+                  - generic [ref=e196]: 5 %
+                  - generic [ref=e197]: 549,100원
+                - generic [ref=e198]:
+                  - generic [ref=e199]: 브랜드 추천 상품
+                  - generic [ref=e200]: ♡
+        - generic [ref=e201]:
+          - img "함께 입고 나서고 싶은" [ref=e202]
+          - generic [ref=e203]:
+            - heading "함께 입고 나서고 싶은" [level=2] [ref=e204]
+            - paragraph [ref=e205]: 아이들과 함께 즐길만한 스타일을 모았어요.
+            - generic [ref=e206]:
+              - img "NEW ROUGH-841" [ref=e208]
+              - generic [ref=e209]:
+                - paragraph [ref=e210]: 온루
+                - heading "NEW ROUGH-841" [level=3] [ref=e211]
+                - generic [ref=e212]: 209,000원
+                - generic [ref=e214]:
+                  - generic [ref=e215]: 브랜드 추천 상품
+                  - generic [ref=e216]: ♡
+            - generic [ref=e217]:
+              - img "RUN BOOTS-841" [ref=e219]
+              - generic [ref=e220]:
+                - paragraph [ref=e221]: 온루
+                - heading "RUN BOOTS-841" [level=3] [ref=e222]
+                - generic [ref=e223]: 239,000원
+                - generic [ref=e225]:
+                  - generic [ref=e226]: 브랜드 추천 상품
+                  - generic [ref=e227]: ♡
+            - generic [ref=e228]:
+              - img "HITMAN" [ref=e230]
+              - generic [ref=e231]:
+                - paragraph [ref=e232]: 온루
+                - heading "HITMAN" [level=3] [ref=e233]
+                - generic [ref=e234]: 209,000원
+                - generic [ref=e236]:
+                  - generic [ref=e237]: 브랜드 추천 상품
+                  - generic [ref=e238]: ♡
+    - generic [ref=e241]:
+      - generic [ref=e242]:
+        - img "일상의 감각을 더하는 선택" [ref=e243]
+        - generic [ref=e244]:
+          - text: YOUR DAILY INSPIRATION
+          - heading "일상의 감각을 더하는 선택" [level=2] [ref=e245]
+          - paragraph [ref=e246]: 옷과 신발부터 공간을 채우는 작은 물건까지.
+      - generic [ref=e247]:
+        - generic [ref=e248]:
+          - img "일상에 스며드는 편안함" [ref=e249]
+          - generic [ref=e250]:
+            - heading "일상에 스며드는 편안함" [level=2] [ref=e251]
+            - paragraph [ref=e252]: 오늘만 누리는 홈패브릭 혜택이에요.
+            - generic [ref=e253]:
+              - img "26F/W NEW 플리스 블랭킷 7 color 3 size" [ref=e255]
+              - generic [ref=e256]:
+                - paragraph [ref=e257]: 오리고
+                - heading "26F/W NEW 플리스 블랭킷 7 color 3 size" [level=3] [ref=e258]
+                - generic [ref=e259]:
+                  - generic [ref=e260]: 52 %
+                  - generic [ref=e261]: 17,120원
+                - generic [ref=e262]:
+                  - generic [ref=e263]: 브랜드 추천 상품
+                  - generic [ref=e264]: ♡
+            - generic [ref=e265]:
+              - img "NEW 아르베 에어터치 순면 60수 고정밴드 플로팅 양면 침대패드 SS/Q/K/LK 7컬러" [ref=e267]
+              - generic [ref=e268]:
+                - paragraph [ref=e269]: 오르디
+                - heading "NEW 아르베 에어터치 순면 60수 고정밴드 플로팅 양면 침대패드 SS/Q/K/LK 7컬러" [level=3] [ref=e270]
+                - generic [ref=e271]:
+                  - generic [ref=e272]: 39 %
+                  - generic [ref=e273]: 59,500원
+                - generic [ref=e274]:
+                  - generic [ref=e275]: 브랜드 추천 상품
+                  - generic [ref=e276]: ♡
+            - generic [ref=e277]:
+              - img "idee a cap / Charcoal 아이디어캡" [ref=e279]
+              - generic [ref=e280]:
+                - paragraph [ref=e281]: 아이디어숍
+                - heading "idee a cap / Charcoal 아이디어캡" [level=3] [ref=e282]
+                - generic [ref=e283]:
+                  - generic [ref=e284]: 29 %
+                  - generic [ref=e285]: 29,820원
+                - generic [ref=e286]:
+                  - generic [ref=e287]: 브랜드 추천 상품
+                  - generic [ref=e288]: ♡
+        - generic [ref=e289]:
+          - img "매일의 식탁에 더하는 감각" [ref=e290]
+          - generic [ref=e291]:
+            - heading "매일의 식탁에 더하는 감각" [level=2] [ref=e292]
+            - paragraph [ref=e293]: 아틀리에 퀸스 테이블매트예요.
+            - generic [ref=e294]:
+              - img "RB 매트 브라운 L (11/6 발송 예정)" [ref=e296]
+              - generic [ref=e297]:
+                - paragraph [ref=e298]: 아틀리에 퀸스
+                - heading "RB 매트 브라운 L (11/6 발송 예정)" [level=3] [ref=e299]
+                - generic [ref=e300]:
+                  - generic [ref=e301]: 24 %
+                  - generic [ref=e302]: 139,040원
+                - generic [ref=e303]:
+                  - generic [ref=e304]: 브랜드 추천 상품
+                  - generic [ref=e305]: ♡
+            - generic [ref=e306]:
+              - img "RB 매트 그린 L (무광 에디션)" [ref=e308]
+              - generic [ref=e309]:
+                - paragraph [ref=e310]: 아틀리에 퀸스
+                - heading "RB 매트 그린 L (무광 에디션)" [level=3] [ref=e311]
+                - generic [ref=e312]:
+                  - generic [ref=e313]: 24 %
+                  - generic [ref=e314]: 139,040원
+                - generic [ref=e315]:
+                  - generic [ref=e316]: 브랜드 추천 상품
+                  - generic [ref=e317]: ♡
+            - generic [ref=e318]:
+              - img "RB 매트 그린 S" [ref=e320]
+              - generic [ref=e321]:
+                - paragraph [ref=e322]: 아틀리에 퀸스
+                - heading "RB 매트 그린 S" [level=3] [ref=e323]
+                - generic [ref=e324]:
+                  - generic [ref=e325]: 36 %
+                  - generic [ref=e326]: 101,240원
+                - generic [ref=e327]:
+                  - generic [ref=e328]: 브랜드 추천 상품
+                  - generic [ref=e329]: ♡
+  - contentinfo [ref=e330]:
+    - generic [ref=e332]:
+      - generic [ref=e333]:
+        - generic [ref=e334]:
+          - heading "고객센터" [level=2] [ref=e335]
+          - paragraph [ref=e336]: 1660-2929
+          - paragraph [ref=e337]: "운영시간 : 평일 09:00 — 18:00"
+          - paragraph [ref=e338]: 점심시간 12:00 — 13:00 제외
+          - link "문의하기 →" [ref=e339] [cursor=pointer]:
+            - /url: https://www.29cm.co.kr/
+        - generic [ref=e340]:
+          - heading "ABOUT US" [level=2] [ref=e341]
+          - paragraph [ref=e342]: 회사 소개
+          - paragraph [ref=e343]: 인재채용
+          - paragraph [ref=e344]: 상시 할인 혜택
+        - generic [ref=e345]:
+          - heading "MY ORDER" [level=2] [ref=e346]
+          - paragraph [ref=e347]: 주문배송
+          - paragraph [ref=e348]: 취소/교환/반품 내역
+          - paragraph [ref=e349]: 상품리뷰 내역
+          - paragraph [ref=e350]: 증빙서류발급
+        - generic [ref=e351]:
+          - heading "MY ACCOUNT" [level=2] [ref=e352]
+          - paragraph [ref=e353]: 회원정보수정
+          - paragraph [ref=e354]: 회원등급
+          - paragraph [ref=e355]: 마일리지
+          - paragraph [ref=e356]: 쿠폰
+        - generic [ref=e357]:
+          - heading "HELP" [level=2] [ref=e358]
+          - paragraph [ref=e359]: 1:1 문의내역
+          - paragraph [ref=e360]: 상품 Q&A내역
+          - paragraph [ref=e361]: 공지사항
+          - paragraph [ref=e362]: 고객의 소리
+      - generic [ref=e363]:
+        - generic [ref=e364]: 개인정보 처리방침
+        - generic [ref=e365]: 이용약관
+        - generic [ref=e366]: 분쟁해결기준
+        - generic [ref=e367]: 안전거래센터
+        - generic [ref=e368]: 결제대행 위탁사
+      - generic [ref=e369]:
+        - paragraph [ref=e370]: "상호명 : (주)무신사 ｜ 대표 : 조만호, 조남성"
+        - paragraph [ref=e371]: "사업장소재지 : 서울특별시 성동구 아차산로 13길 11, 1층 (성수동2가, 무신사캠퍼스 N1)"
+        - paragraph [ref=e372]: "사업자등록번호 : 211-88-79575 ｜ 통신판매업신고 : 2022-서울성동-01952"
+        - paragraph [ref=e373]: "전화번호 : 1660-2929 ｜ 이메일 : customer@29cm.co.kr ｜ 호스팅사업자 : (주)무신사"
+        - paragraph [ref=e374]: 일부 상품의 경우 29CM는 통신판매중개자로서 상품 정보와 거래에 대한 책임이 제한될 수 있습니다.
+        - paragraph [ref=e375]: © 29CM. All rights reserved.
