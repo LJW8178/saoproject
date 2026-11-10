@@ -276,7 +276,6 @@ button {
 }
 .product-name {
     font-size: 12px;
-    color: 400;
     margin-bottom: 8px;
 }
 .feed-price {
@@ -301,5 +300,85 @@ button {
 }
 .feed-product-footer > span {
     font-size: 10px;
-    color: 888;
+    color: #888;
+}
+.site-footer {
+    margin-top: 55px;
+    margin-bottom: 44px;
+    color: #222;
+}
+.footer-con {
+    display: flex;
+    flex-direction: column;
+}
+.footer-top {
+    display: flex;
+    gap: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+.footer-customer {
+    width: 320px;
+}
+.footer-customer > h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #222;
+}
+.footer-customer .customer-number {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+.footer-customer > p {
+    font-size: 12px;
+    color: #777;
+    margin-top: 8px;
+}
+.footer-contect {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    color: #222;
+    margin-top: 18px;
+}
+.footer-contect > span {
+    font-size: 12px;
+}
+.footer-menu {
+    width: 220px;
+}
+.footer-menu > h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 22px;
+}
+.footer-menu > p {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 12px;
+}
+.footer-policy {
+    display: flex;
+    gap: 24px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.footer-policy > p {
+    font-size: 12px;
+    color: #222;
+}
+.footer-company {
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-company > span {
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 9px;
 }
