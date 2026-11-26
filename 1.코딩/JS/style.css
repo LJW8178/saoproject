@@ -1,6 +1,13 @@
-button.remove {
+
+.open.active {
+    color: blue;
+}
+.open {
     color: black;
 }
-button.active {
-    color: blue  ;
+.close.active {
+    color: blue;
+}
+.close {
+    color: black;
 }
